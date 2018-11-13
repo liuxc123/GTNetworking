@@ -21,7 +21,7 @@
 - (void)setupRequestFilters {
 
     GTNetworkConfig *config = [GTNetworkConfig sharedConfig];
-    config.baseUrl = @"http://test.debug.webus.vip";
+    config.baseUrl = @"http://www.baidu.com";
 
 //    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 //    GTUrlArgumentsFilter *urlFilter = [GTUrlArgumentsFilter filterWithArguments:@{@"version": appVersion}];

@@ -6,6 +6,5 @@ target 'GTNetworking_Example' do
   target 'GTNetworking_Tests' do
     inherit! :search_paths
 
-    
   end
 end

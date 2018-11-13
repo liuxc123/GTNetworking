@@ -26,7 +26,7 @@
   "frameworks": "CFNetwork",
   "dependencies": {
     "AFNetworking": [
-
+      "~> 3.2.1"
     ]
   }
 }

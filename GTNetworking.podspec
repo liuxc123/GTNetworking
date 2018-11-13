@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'CFNetwork'
 
 
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking', '~> 3.2.1'
 
 end

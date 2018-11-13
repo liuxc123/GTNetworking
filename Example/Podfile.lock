@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - GTNetworking (0.0.1):
-    - AFNetworking
+    - AFNetworking (~> 3.2.1)
 
 DEPENDENCIES:
   - GTNetworking (from `../`)
@@ -30,8 +30,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  GTNetworking: 51cedef8f006565ce977a38aa73a4e0490a770a6
+  GTNetworking: 2c6e6aaab58124e77cfcabaad5e88521d24c8ad9
 
-PODFILE CHECKSUM: f58b526285af8a7db43c172caef49e2cff658d0c
+PODFILE CHECKSUM: a7f4cc80f24600cbd09f6ca2e9aeba49ecb50bae
 
 COCOAPODS: 1.5.0

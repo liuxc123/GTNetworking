@@ -1,0 +1,6 @@
+framework module Pods_GTNetworking_Example {
+  umbrella header "Pods-GTNetworking_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

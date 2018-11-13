@@ -7,14 +7,27 @@
 //
 
 #import "GTAppDelegate.h"
+#import "GTNetworking.h"
+#import "GTUrlArgumentsFilter.h"
 
 @implementation GTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self setupRequestFilters];
     return YES;
 }
+
+- (void)setupRequestFilters {
+
+    GTNetworkConfig *config = [GTNetworkConfig sharedConfig];
+    config.baseUrl = @"http://test.debug.webus.vip";
+
+//    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+//    GTUrlArgumentsFilter *urlFilter = [GTUrlArgumentsFilter filterWithArguments:@{@"version": appVersion}];
+//    [config addUrlFilter:urlFilter];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

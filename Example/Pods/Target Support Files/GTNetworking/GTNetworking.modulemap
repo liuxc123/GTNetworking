@@ -1,0 +1,6 @@
+framework module GTNetworking {
+  umbrella header "GTNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

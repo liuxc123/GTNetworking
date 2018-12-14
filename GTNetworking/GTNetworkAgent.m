@@ -418,7 +418,7 @@
 - (void)removeRequestFromRecord:(GTBaseRequest *)request {
     Lock();
     [_requestsRecord removeObjectForKey:@(request.requestTask.taskIdentifier)];
-    GTLog(@"Request queue size = %zd", [_requestsRecord count]);
+    GTLog(@"Request queue size = %zd", (long)[_requestsRecord count]);
     Unlock();
 }
 
@@ -447,11 +447,6 @@
     }
 
     __block NSURLSessionDataTask *dataTask = nil;
-//    dataTask = [_manager dataTaskWithRequest:request
-//                           completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *_error) {
-//                               [self handleRequestResult:dataTask responseObject:responseObject error:_error];
-//                           }];
-
     dataTask = [_manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         [self handleRequestResult:dataTask responseObject:responseObject error:error];
     }];

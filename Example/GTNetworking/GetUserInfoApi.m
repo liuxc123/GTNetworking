@@ -24,10 +24,10 @@
     return @"/index/user/basic_info";
 }
 
-- (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary {
-    return @{@"User-Agent": @"APP,,iPhone,Simulator,iOS 11.3,2.2.2,,,Wifi,14,App Store,414*736,2.2",
-             @"user-id": @"202"};
-}
+//- (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary {
+//    return @{@"User-Agent": @"APP,,iPhone,Simulator,iOS 11.3,2.4.3,,,Wifi,20,App Store,375*812,2.2",
+//             @"user-id": @"6"};
+//}
 
 #pragma mark - Override
 - (GTRequestMethod)requestMethod {
@@ -60,14 +60,14 @@
     return 60.f;
 }
 
-- (id)jsonValidator {
-    return @{
-             @"code": [NSNumber class],
-             @"data": [NSString class],
-             @"desc": [NSString class],
-             @"time": [NSNumber class]
-             };
-}
+//- (id)jsonValidator {
+//    return @{
+//             @"code": [NSNumber class],
+//             @"data": [NSString class],
+//             @"desc": [NSString class],
+//             @"time": [NSNumber class]
+//             };
+//}
 
 
 
